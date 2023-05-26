@@ -25,15 +25,16 @@ function App() {
     localStorage.setItem(LOCAL_STG_KEY, JSON.stringify(contacts));
   }, [contacts]);
 
+
   return (
     <div className="ui container">
-
-      <Header/>
-      
-      <AddContact addContactHandler={addContactHandler} />
-      <ContactList contacts={contacts}/>
-      
-    </div>
+    <Header/>
+    <Router>
+    <AddContact addContactHandler={addContactHandler} />
+    <ContactList contacts={contacts}/>
+    </Router>
+    
+  </div>
   );
 }
 

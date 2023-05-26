@@ -11,11 +11,12 @@ function ContactList(props)
 
     const renderContact = props.contacts.map((contact)=>{
         return(
+            
             <ContactCard contact={contact}/>
         )
     })
     return(
-        <div>
+        <div style={{ border: '1px solid #000' }}>
             <h2>Guest List</h2>
             {renderContact}
         </div>

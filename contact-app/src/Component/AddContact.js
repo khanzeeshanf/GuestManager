@@ -20,7 +20,7 @@ class AddContact extends React.Component
     render() {
 
         return(
-            <div className="ui main">
+            <div className="ui main" style={{ border: '1px solid #000' }}>
             <h2>Add Contact</h2>
             <form className="ui form" onSubmit={this.add}>
               <div className="field">
